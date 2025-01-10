@@ -1,0 +1,10 @@
+@import "../src/assets/styles/mixins.scss";
+
+.list-item {
+  @include font-setup(16, 400, null, Lato);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  padding: 3px;
+}

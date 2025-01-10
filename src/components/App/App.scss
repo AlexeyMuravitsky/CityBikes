@@ -1,0 +1,34 @@
+@import "../src/assets/styles/mixins.scss";
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  margin-bottom: 20px;
+}
+
+.header__title {
+  @include font-setup(55, 400, null, Lato);
+  cursor: pointer;
+}
+
+.header__favorites-btn {
+  @include font-setup(20, 400, null, Lato);
+  background-color: #34ad6c;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  position: relative;
+  color: #ffff;
+}
+
+.header__favorites-count {
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  background-color: #c34607;
+  padding: 3px 9px;
+  border-radius: 18px;
+  color: #ffff;
+}

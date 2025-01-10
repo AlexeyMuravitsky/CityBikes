@@ -1,0 +1,14 @@
+@import "../src/assets/styles/mixins.scss";
+
+.favorites__btn-clear {
+  display: flex;
+  @include font-setup(20, 400, null, Lato);
+  background-color: #dc3131;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  position: relative;
+  color: #ffff;
+  margin-left: auto;
+  margin-bottom: 25px;
+}

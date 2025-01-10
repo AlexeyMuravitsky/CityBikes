@@ -1,0 +1,25 @@
+@mixin font-setup(
+  $size,
+  $weight: null,
+  $line-height: null,
+  $family: null,
+  $letter-spacing: null
+) {
+  font-size: $size + px;
+
+  @if $weight != null {
+    font-weight: $weight;
+  }
+
+  @if $line-height != null {
+    line-height: $line-height + px;
+  }
+
+  @if $family != null {
+    font-family: $family, sans-serif;
+  }
+
+  @if $letter-spacing != null {
+    letter-spacing: $letter-spacing + px;
+  }
+}

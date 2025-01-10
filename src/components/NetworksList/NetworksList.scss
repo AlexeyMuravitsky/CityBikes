@@ -1,0 +1,50 @@
+@import "../src/assets/styles/mixins.scss";
+
+.citybikes-container {
+  display: flex;
+  height: 100%;
+}
+
+.networks {
+  width: 50%;
+  margin-right: 20px;
+}
+
+.networks__title {
+  @include font-setup(25, 700, null, Roboto-Slab);
+  margin-bottom: 15px;
+}
+
+.networks__list {
+  height: 75vh;
+  overflow-y: auto;
+}
+
+.list__item--active {
+  @include font-setup(16, 700, null, Lato);
+  color: #007bff;
+}
+
+.stations {
+  width: 50%;
+}
+
+.stations__title {
+  @include font-setup(20, 700, null, Lato);
+  margin-bottom: 15px;
+}
+
+.stations__list {
+  height: 75vh;
+  overflow-y: auto;
+}
+
+.heart-icon {
+  color: #b6b8ba;
+  height: 25px;
+  width: 25px;
+}
+
+.heart-icon--active {
+  color: #46ba61;
+}
